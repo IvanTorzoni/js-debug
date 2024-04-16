@@ -84,9 +84,9 @@ loopToFive()
 console.log(`Debug problema 3`);
 console.log(`////////////////////////////////////////`);
 
-// Eercizio 3: spiegazione.
+// Eercizio 4: spiegazione.
 //In questo esercizio sono presenti sia errori sintattici che logici
-//Nella soluzione sono stati inseriti tutti gli errori
+//La funzione dovrebbe al termine del ciclo for e impostate le condizioni di per il numero pari, dovrebbe restituire l'array evenNumbers con i numeri pari
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
