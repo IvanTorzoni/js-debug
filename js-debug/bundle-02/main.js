@@ -74,7 +74,10 @@ function printColorsNumber() {
 printColorsNumber();
 
 
-
+// Eercizio 3: spiegazione.
+//La funzione presenta un errore logico.
+// Quello che ci aspettiamo è che all' inserimento del numero da parte dell'utente, il risultato finale ci restituisca quel numero maggiorato di 12
+// Tuttavia in console viene mostrato il risultato errato
 // ESERCIZIO 3
 // function addNumbers() {
 //     const userNumber = prompt('Inserisci un numero');
@@ -84,6 +87,20 @@ printColorsNumber();
 // }
 // addNumbers();
 
+//Soluzione
+// Senza parsInt viene concatenato il valore in input con il valore da sommare
+// Inserendo parsInt davanti al prompt trasformo l'input da stringa a numero. Facendo ciò è possibile eseguire la somma algebrica tra numeri.
+console.log(`Debug problema 3`);
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
+
+    console.log(`Il risultato finale è ${total}`);
+    console.log(`Debug problema 3`);
+
+    console.log(`////////////////////////////////////////`);
+}
+addNumbers();
 
 // ESERCIZIO 4
 // function checkAccess() {
