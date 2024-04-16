@@ -29,7 +29,11 @@ for (let i = 0; i < 5; i++) {
 
 console.log(`Debug problema 1`);
 
+console.log(`////////////////////////////////////////`);
 
+// Eercizio 2: spiegazione.
+//La funzione presenta un errore di sintassi (mostrato anche in console). L'errore è l'uguale singolo, doverbbe essere doppio o triplo uguale.
+//Inoltre la funzione non andrà se non specifichiamo almeno 1 parametro di ingresso
 
 // // ESERCIZIO 2
 // function addIfEven(num) {
@@ -39,14 +43,46 @@ console.log(`Debug problema 1`);
 //     return num;
 // }
 
+//Soluzione
+// insetiamo triplo uguale e un valore di partenza che fungerà da parametro per la funzione
+console.log(`Debug problema 2`);
 
-// // ESERCIZIO 3
+let i = 2
+
+function addIfEven(num) {
+    if (num % 2 === 0) {
+        return num + 5;
+    }
+    return num;
+}
+
+console.log(addIfEven(i));
+console.log(`Debug problema 2`);
+console.log(`////////////////////////////////////////`);
+
+// Eercizio 3: spiegazione.
+//il ciclo for presenta un errore di sintassi. Vengono inserite le virgole al posto dei punti e virgola
+//La funzione deve essere richiamata per vedere il risultato
+
+// ESERCIZIO 3
 // function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
+//     for (let i = 0; i < 5; i++) {
 //         console.log(i);
 //     }
 // }
 
+//Soluzione
+//Cambio le vigole e richiamo la funzione alla fine
+console.log(`Debug problema 3`);
+function loopToFive() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
+
+loopToFive()
+console.log(`Debug problema 3`);
+console.log(`////////////////////////////////////////`);
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
