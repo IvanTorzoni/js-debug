@@ -45,6 +45,10 @@ function checkAge() {
 }
 checkAge();
 
+// Eercizio 2: spiegazione.
+//La funzione presenta un errore logico.
+// Quello che ci aspettiamo è che il log della console mi dia il numero, in valore numerico, dei colori presenti nell'array.
+// Tuttavia in console viene mostrato undefined 
 
 // ESERCIZIO 2
 // function printColorsNumber() {
@@ -52,6 +56,23 @@ checkAge();
 //     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
 // }
 // printColorsNumber();
+
+//Soluzione
+// Creo un ciclo for per estrarre il valore numerico di tutti i colori presenti nell'array, tramite variabile di blocco
+//Sostituisco nel template literal color.length con la variabile che creo 
+console.log(`Debug problema 2`);
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    for (i = 1; i < colors.length + 1; i++) {
+        colorTotal = i
+    }
+    console.log(`Nella mia palette ci sono ${colorTotal} colori!`);
+    console.log(`Debug problema 2`);
+
+    console.log(`////////////////////////////////////////`);
+}
+printColorsNumber();
+
 
 
 // ESERCIZIO 3
