@@ -84,15 +84,45 @@ loopToFive()
 console.log(`Debug problema 3`);
 console.log(`////////////////////////////////////////`);
 
-// // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
+// Eercizio 3: spiegazione.
+//In questo esercizio sono presenti sia errori sintattici che logici
+//Nella soluzione sono stati inseriti tutti gli errori
+
+// ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
 //     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 //     let evenNumbers = [];
-//     for (let i = 0; i < numbers.length - 1; i++;) {
-//         if (numbers % 2 = 0); {
-//             evenNumbers.push(i);
+//     for (let i = 0; i < numbers.length - 1; i++;) {  
+//         if (numbers % 2 = 0); {                      
+//             evenNumbers.push(i);                     
 //         }
-//         return evenNumbers;
+//         return evenNumbers;                          
 //     }
 // }
-// displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+
+
+
+//Soluzione
+//Inseriamo l'uguale dopo il minore in modo da far prendere i numeri fino all'8
+//Eliminiamo il punto e virgola dopo l'incremento
+//inserisco una variabile di blocco e associo la sequaenza di numeri
+//all' if metto i tre uguali
+//tolgo il punto e virgola tra le parentesi tonde e quadre della condizione
+//pusho i valori rimasti nella variabile dentro l'array
+//tolgo il return
+
+console.log(`Debug problema 4`);
+function displayEvenNumbers() {
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
+    for (let i = 0; i <= numbers.length - 1; i++) { 
+        let num = numbers[i];
+        if (num % 2 === 0) {
+            evenNumbers.push(num)
+        }
+    }
+    console.log(evenNumbers);
+    console.log(`Debug problema 4`);
+}
+displayEvenNumbers();
+// dovrebbe restituire [2,4,6,8]
