@@ -128,6 +128,7 @@ addNumbers();
 
 //Soluzione
 // Alla condizione che verifica se il valore della variabile flag sia true o false aggiungiamo gli apici, dato che quello che fà è un confronto tra due stringhe
+console.log(`Debug problema 4`);
 function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
@@ -143,6 +144,9 @@ function checkAccess() {
     } else {
         console.log('Accesso negato!');
     }
+    console.log(`Debug problema 4`);
+
+    console.log(`////////////////////////////////////////`);
 }
 checkAccess();
 
