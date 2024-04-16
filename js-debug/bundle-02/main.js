@@ -102,6 +102,11 @@ function addNumbers() {
 }
 addNumbers();
 
+
+// Eercizio 4: spiegazione.
+//La funzione presenta un errore sintattico.
+// Quello che ci aspettiamo è che all' inserimento della mail corretta e presente nell'array delle mail da parte dell'utente, in console appaia il messagio di accesso consentito. 
+// Tuttavia in console viene mostrato il messaggio "Accesso negato", indipendentemente se la mail è corretta o meno
 // ESERCIZIO 4
 // function checkAccess() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
@@ -121,6 +126,25 @@ addNumbers();
 // }
 // checkAccess();
 
+//Soluzione
+// Alla condizione che verifica se il valore della variabile flag sia true o false aggiungiamo gli apici, dato che quello che fà è un confronto tra due stringhe
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    if (addresses.includes(userEmail)) {
+        grantAccess = 'true';
+    }
+
+    if (grantAccess === "true") {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 // function checkAccessImproved() {
